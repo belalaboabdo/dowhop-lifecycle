@@ -61,7 +61,7 @@
 
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  
+
   <!-- Initialize Firebase app -->
   <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
   <script>
@@ -82,8 +82,8 @@
 
 <body>
 
-  
-  
+
+
   <!-- Login screen -->
   <section id="login-page">
     <h3 class="login-page-title">Login</h3>
@@ -124,6 +124,12 @@
 
     <div id="create" class="panel">
       <div class="wrap">
+        <!--show what the user put in by displaying user list wrap-->
+        <div class="user-list">
+          <h2>DoWhops in Planning</h2>
+          <div id="user-list-wrap"></div>
+        </div> <!-- Close Form wrap -->
+
         <div class="form-wrap">
 
           <h2>Whop will you do?</h2>
@@ -306,12 +312,6 @@
             <div id="error" class="form-error"></div>
           </form>
         </div>
-
-        <!--show what the user put in by displaying user list wrap-->
-        <div class="user-list">
-          <h2>DoWhops in Planning</h2>
-          <div id="user-list-wrap"></div>
-        </div> <!-- Close Form wrap -->
       </div> <!-- Close Wrap -->
     </div> <!-- Close Panel tab -->
 
