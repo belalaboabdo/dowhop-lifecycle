@@ -217,6 +217,9 @@ function sessionRef(doWhopSelector) {
   database.ref('session').child(person.uid).set({ current_dowhop: key });
   showEditForm(doWhopSelector);
   fillInEditForm(doWhopSelector);
+  doWhopSelector.setAttribute("style","opacity:.9");
+  var imgEl = doWhopSelector.querySelector('.dowhop-selector-header');
+  imgEl.style.opacity = 0.9; 
 }
 
 function showEditForm(doWhopSelector) {

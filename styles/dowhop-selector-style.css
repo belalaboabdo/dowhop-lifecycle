@@ -19,12 +19,15 @@
 
 .dowhop-selector:hover {
   cursor: pointer;
+  filter: opacity(.8);
 }
 
 .dowhop-selector-header-top {
-  height: 250px;
+  height: 177px;
   background-size: cover;
   background-repeat: no-repeat;
+  color:#606060;
+  font-size: 20px;
 }
 
 .dowhop-selector-header-top h1, h2 {
@@ -32,13 +35,15 @@
   background-color: rgba(255,255,255, .3);
 }
 
-.dowhop-selector-header {
-  height: 250px;
+.dowhop-selector-header { 
+  height: 177px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 0;
   margin-top: 0;
+  color:#606060;
+  font-size: 20px;
 }
 
 .dowhop-selector-header h1, h2 {
@@ -72,6 +77,7 @@ i.dowhop-icon {
   padding-bottom: 0;
   margin-bottom: 0;
   width: 100%;
+
 }
 
 i.dowhop-icon:hover,
