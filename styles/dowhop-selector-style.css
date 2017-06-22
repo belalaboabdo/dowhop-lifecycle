@@ -137,7 +137,10 @@ input[type=file]#dowhop-image-capture{
   margin-bottom: 12px;
   font-size: .875em;
 }
-
+input[type=file]#dowhop-image-optional{
+  margin-bottom: 12px;
+  font-size: .875em;
+}
 .mdl-card.mdl-shadow--6dp {
   width: 100%;
 }

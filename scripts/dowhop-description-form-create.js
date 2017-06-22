@@ -20,6 +20,7 @@ var whenDescription = document.getElementById('when-description');
 var whereDescription = document.getElementById('where-description');
 var howMuchDescription = document.getElementById('how-much-description');
 var dowhopImageCapture = document.getElementById('dowhop-image-capture');
+var optionalImageCapture = document.getElementById('dowhop-image-optional')
 var submitNewDoWhopBtn = document.getElementById('create-new-dowhop');
 submitNewDoWhopBtn.addEventListener('click', submitNewDoWhopEntry);
 
@@ -52,6 +53,7 @@ function submitNewDoWhopEntry(e) {
       createdBy: uid,
       doWhopDescriptionKey: doWhopDescriptionKey,
       downloadURL: snapshot.metadata.downloadURLs[0],
+      optional: optionalImageCapture.value,
       titleDescription: titleDescription.value,
       whoDescription: whoDescription.value,
       whatDescription: whatDescription.value,
@@ -107,6 +109,7 @@ function clearNewDoWhopEntryForm() {
   whereDescription.value = '';
   howMuchDescription.value = '';
   dowhopImageCapture.value = '';
+  optionalImageCapture.value = '';
 }
 
 // Adding function to add a chosen dowhop a user's list:
